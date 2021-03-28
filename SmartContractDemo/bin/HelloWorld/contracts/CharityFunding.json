@@ -1,0 +1,473 @@
+{
+    "contractName": "CharityFunding",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "deposit",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "charity_organisation",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "quantity",
+                    "type": "uint256"
+                }
+            ],
+            "name": "fund",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getBalance",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"charity_organisation\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"quantity\",\"type\":\"uint256\"}],\"name\":\"fund\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/marina/HelloWorldHack/SmartContractDemo/HelloWorld/contracts/funding.sol\":\"CharityFunding\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/marina/HelloWorldHack/SmartContractDemo/HelloWorld/contracts/funding.sol\":{\"keccak256\":\"0xf59009cbb419e9fd648565f27a327b7d8cb0fd668c407926bb9236fb0e3d4345\",\"urls\":[\"bzz-raw://80006b8ba57de6f682fbff7c39e9e13e9b83ac4b66c17c9f31dd034eed15e03e\",\"dweb:/ipfs/QmZfUB6ddEVqNowpCEqRTygDEmJjcP5wxWFAGfaf5ARLeh\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5061014b806100206000396000f3fe6080604052600436106100345760003560e01c806312065fe0146100395780637b1837de14610059578063b6b55f251461007b575b600080fd5b34801561004557600080fd5b504760405190815260200160405180910390f35b34801561006557600080fd5b506100796100743660046100c7565b61008c565b005b6100796100893660046100fd565b50565b6040516001600160a01b0383169082156108fc029083906000818181858888f193505050501580156100c2573d6000803e3d6000fd5b505050565b600080604083850312156100d9578182fd5b82356001600160a01b03811681146100ef578283fd5b946020939093013593505050565b60006020828403121561010e578081fd5b503591905056fea264697066735822122035473f7144388b576e711ca0659412f8aab5cdd8ce39668c2be90ee5fce2083364736f6c63430008030033",
+    "deployedBytecode": "6080604052600436106100345760003560e01c806312065fe0146100395780637b1837de14610059578063b6b55f251461007b575b600080fd5b34801561004557600080fd5b504760405190815260200160405180910390f35b34801561006557600080fd5b506100796100743660046100c7565b61008c565b005b6100796100893660046100fd565b50565b6040516001600160a01b0383169082156108fc029083906000818181858888f193505050501580156100c2573d6000803e3d6000fd5b505050565b600080604083850312156100d9578182fd5b82356001600160a01b03811681146100ef578283fd5b946020939093013593505050565b60006020828403121561010e578081fd5b503591905056fea264697066735822122035473f7144388b576e711ca0659412f8aab5cdd8ce39668c2be90ee5fce2083364736f6c63430008030033",
+    "sourceMap": "28:378:1:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "28:378:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;304:99;;;;;;;;;;-1:-1:-1;374:21:1;304:99;;742:25:2;;;730:2;715:18;304:99:1;;;;;;;61:137;;;;;;;;;;-1:-1:-1;61:137:1;;;;;:::i;:::-;;:::i;:::-;;206:90;;;;;;:::i;:::-;;;61:137;149:39;;-1:-1:-1;;;;;149:29:1;;;:39;;;;;179:8;;149:39;;;;179:8;149:29;:39;;;;;;;;;;;;;;;;;;;;;61:137;;:::o;14:382:2:-;;;151:2;139:9;130:7;126:23;122:32;119:2;;;172:6;164;157:22;119:2;203:23;;-1:-1:-1;;;;;255:31:2;;245:42;;235:2;;306:6;298;291:22;235:2;334:5;386:2;371:18;;;;358:32;;-1:-1:-1;;;109:287:2:o;401:190::-;;513:2;501:9;492:7;488:23;484:32;481:2;;;534:6;526;519:22;481:2;-1:-1:-1;562:23:2;;471:120;-1:-1:-1;471:120:2:o",
+    "sourcePath": "c:/Users/marina/HelloWorldHack/SmartContractDemo/HelloWorld/contracts/funding.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.3+commit.8d00100c"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/marina/HelloWorldHack/SmartContractDemo/HelloWorld/contracts/funding.sol",
+        "exportedSymbols": {
+            "CharityFunding": [
+                67
+            ]
+        },
+        "id": 68,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 34,
+                "literals": [
+                    "solidity",
+                    "0.8",
+                    ".3"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:22:1"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 67,
+                "linearizedBaseContracts": [
+                    67
+                ],
+                "name": "CharityFunding",
+                "nameLocation": "37:14:1",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 47,
+                            "nodeType": "Block",
+                            "src": "136:62:1",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 44,
+                                                "name": "quantity",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 38,
+                                                "src": "179:8:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 41,
+                                                "name": "charity_organisation",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 36,
+                                                "src": "149:20:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address_payable",
+                                                    "typeString": "address payable"
+                                                }
+                                            },
+                                            "id": 43,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "transfer",
+                                            "nodeType": "MemberAccess",
+                                            "src": "149:29:1",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                                                "typeString": "function (uint256)"
+                                            }
+                                        },
+                                        "id": 45,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "149:39:1",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 46,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "149:39:1"
+                                }
+                            ]
+                        },
+                        "functionSelector": "7b1837de",
+                        "id": 48,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "fund",
+                        "nameLocation": "70:4:1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 39,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 36,
+                                    "mutability": "mutable",
+                                    "name": "charity_organisation",
+                                    "nameLocation": "91:20:1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 48,
+                                    "src": "75:36:1",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address_payable",
+                                        "typeString": "address payable"
+                                    },
+                                    "typeName": {
+                                        "id": 35,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "75:15:1",
+                                        "stateMutability": "payable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address_payable",
+                                            "typeString": "address payable"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 38,
+                                    "mutability": "mutable",
+                                    "name": "quantity",
+                                    "nameLocation": "118:8:1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 48,
+                                    "src": "113:13:1",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 37,
+                                        "name": "uint",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "113:4:1",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "74:53:1"
+                        },
+                        "returnParameters": {
+                            "id": 40,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "136:0:1"
+                        },
+                        "scope": 67,
+                        "src": "61:137:1",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    },
+                    {
+                        "body": {
+                            "id": 53,
+                            "nodeType": "Block",
+                            "src": "254:42:1",
+                            "statements": []
+                        },
+                        "functionSelector": "b6b55f25",
+                        "id": 54,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "deposit",
+                        "nameLocation": "215:7:1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 51,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 50,
+                                    "mutability": "mutable",
+                                    "name": "amount",
+                                    "nameLocation": "231:6:1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 54,
+                                    "src": "223:14:1",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 49,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "223:7:1",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "222:16:1"
+                        },
+                        "returnParameters": {
+                            "id": 52,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "254:0:1"
+                        },
+                        "scope": 67,
+                        "src": "206:90:1",
+                        "stateMutability": "payable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 65,
+                            "nodeType": "Block",
+                            "src": "356:47:1",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "expression": {
+                                            "arguments": [
+                                                {
+                                                    "id": 61,
+                                                    "name": "this",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967268,
+                                                    "src": "382:4:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_CharityFunding_$67",
+                                                        "typeString": "contract CharityFunding"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_contract$_CharityFunding_$67",
+                                                        "typeString": "contract CharityFunding"
+                                                    }
+                                                ],
+                                                "id": 60,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "nodeType": "ElementaryTypeNameExpression",
+                                                "src": "374:7:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_address_$",
+                                                    "typeString": "type(address)"
+                                                },
+                                                "typeName": {
+                                                    "id": 59,
+                                                    "name": "address",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "374:7:1",
+                                                    "typeDescriptions": {}
+                                                }
+                                            },
+                                            "id": 62,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "typeConversion",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "374:13:1",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "id": 63,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberName": "balance",
+                                        "nodeType": "MemberAccess",
+                                        "src": "374:21:1",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "functionReturnParameters": 58,
+                                    "id": 64,
+                                    "nodeType": "Return",
+                                    "src": "367:28:1"
+                                }
+                            ]
+                        },
+                        "functionSelector": "12065fe0",
+                        "id": 66,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getBalance",
+                        "nameLocation": "313:10:1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 55,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "323:2:1"
+                        },
+                        "returnParameters": {
+                            "id": 58,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 57,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 66,
+                                    "src": "347:7:1",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 56,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "347:7:1",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "346:9:1"
+                        },
+                        "scope": 67,
+                        "src": "304:99:1",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 68,
+                "src": "28:378:1"
+            }
+        ],
+        "src": "0:406:1"
+    },
+    "functionHashes": {
+        "deposit(uint256)": "b6b55f25",
+        "fund(address,uint256)": "7b1837de",
+        "getBalance()": "12065fe0"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "66200",
+            "executionCost": "117",
+            "totalCost": "66317"
+        },
+        "external": {
+            "deposit(uint256)": "209",
+            "fund(address,uint256)": "infinite",
+            "getBalance()": "148"
+        }
+    }
+}
